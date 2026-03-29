@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "hospital_robot_msgs__py",
+		"source" : "/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/hospital_robot_msgs__py"
+	}
+}

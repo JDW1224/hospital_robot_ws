@@ -1,0 +1,9 @@
+source;share/hospital_robot_web/hook/pythonpath.ps1
+source;share/hospital_robot_web/hook/pythonpath.dsv
+source;share/hospital_robot_web/hook/pythonpath.sh
+source;share/hospital_robot_web/hook/ament_prefix_path.ps1
+source;share/hospital_robot_web/hook/ament_prefix_path.dsv
+source;share/hospital_robot_web/hook/ament_prefix_path.sh
+source;../../build/hospital_robot_web/share/hospital_robot_web/hook/pythonpath_develop.ps1
+source;../../build/hospital_robot_web/share/hospital_robot_web/hook/pythonpath_develop.dsv
+source;../../build/hospital_robot_web/share/hospital_robot_web/hook/pythonpath_develop.sh

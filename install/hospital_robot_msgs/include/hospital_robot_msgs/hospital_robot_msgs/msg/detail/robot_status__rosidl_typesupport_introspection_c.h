@@ -1,0 +1,1 @@
+/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_typesupport_introspection_c/hospital_robot_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h

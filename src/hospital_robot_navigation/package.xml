@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hospital_robot_navigation</name>
+  <version>0.1.0</version>
+  <description>목표 주행, E-Stop, 상태 관리</description>
+  <maintainer email="dev@todo.com">developer</maintainer>
+  <license>MIT</license>
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>hospital_robot_msgs</depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

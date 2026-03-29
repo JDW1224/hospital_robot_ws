@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from hospital_robot_msgs/srv/EStop.srv
+// generated code does not contain a copyright notice
+
+
+module hospital_robot_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "E-Stop 발동/해제 서비스")
+    struct EStop_Request {
+      @verbatim (language="comment", text=
+        "true: E-Stop 발동 / false: 해제")
+      boolean activate;
+    };
+    struct EStop_Response {
+      @verbatim (language="comment", text=
+        "성공 여부")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "현재 상태 (NORMAL / ESTOP)")
+      string state;
+    };
+  };
+};

@@ -1,0 +1,134 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Value: true
+      Cell Size: 1
+      Color: 100; 100; 100
+      Plane Cell Count: 40
+
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Value: true
+      Show Names: false
+      Show Axes: true
+      Show Arrows: false
+      Marker Scale: 0.3
+      Frame Timeout: 15
+
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Value: true
+      Description Topic:
+        Value: /robot_description
+
+    - Class: rviz_default_plugins/Map
+      Name: Map
+      Value: true
+      Topic:
+        Value: /map
+        Depth: 5
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Filter size: 10
+      Color Scheme: map
+      Draw Behind: true
+
+    - Class: rviz_default_plugins/Map
+      Name: Global Costmap
+      Value: true
+      Topic:
+        Value: /global_costmap/costmap
+      Color Scheme: costmap
+      Draw Behind: false
+      Alpha: 0.3
+      Reliability Policy: Reliable
+
+    - Class: rviz_default_plugins/Map
+      Name: Local Costmap
+      Value: false
+      Topic:
+        Value: /local_costmap/costmap
+      Color Scheme: costmap
+      Draw Behind: false
+      Alpha: 0.5
+      Reliability Policy: Reliable
+
+    - Class: rviz_default_plugins/LaserScan
+      Name: LaserScan
+      Value: true
+      Topic:
+        Value: /scan_fixed
+      Size (m): 0.03
+      Color Transformer: FlatColor
+      Color: 255; 0; 0
+      Style: Points
+      Reliability Policy: Best Effort
+
+    - Class: rviz_default_plugins/Path
+      Name: Global Path
+      Value: true
+      Topic:
+        Value: /plan
+      Color: 0; 255; 0
+      Line Style: Lines
+      Alpha: 0.8
+
+    - Class: rviz_default_plugins/Path
+      Name: Local Path
+      Value: true
+      Topic:
+        Value: /local_plan
+      Color: 255; 255; 0
+      Line Style: Lines
+      Alpha: 0.5
+
+    - Class: rviz_default_plugins/PoseWithCovariance
+      Name: AMCL Pose
+      Value: true
+      Topic:
+        Value: /amcl_pose
+      Color: 0; 200; 0
+
+    - Class: rviz_default_plugins/PoseArray
+      Name: Particle Cloud
+      Value: true
+      Topic:
+        Value: /particle_cloud
+      Color: 0; 180; 0
+      Arrow Length: 0.05
+
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic:
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Value: /goal_pose
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/PublishPoint
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: TopDownOrtho
+      Scale: 30
+      X: 0
+      Y: -4
+    Saved: ~
+Window Geometry:
+  Width: 1200
+  Height: 800

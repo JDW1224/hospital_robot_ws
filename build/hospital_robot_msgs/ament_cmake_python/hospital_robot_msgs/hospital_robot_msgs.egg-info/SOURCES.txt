@@ -1,0 +1,6 @@
+setup.py
+hospital_robot_msgs/__init__.py
+hospital_robot_msgs.egg-info/PKG-INFO
+hospital_robot_msgs.egg-info/SOURCES.txt
+hospital_robot_msgs.egg-info/dependency_links.txt
+hospital_robot_msgs.egg-info/top_level.txt

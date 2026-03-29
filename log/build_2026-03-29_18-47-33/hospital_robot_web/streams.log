@@ -1,0 +1,23 @@
+[1.711s] Invoking command in '/home/team9/hostpital_robot_ws/build/hospital_robot_web': AMENT_PREFIX_PATH=/home/team9/hostpital_robot_ws/install/hospital_robot_poi:/home/team9/hostpital_robot_ws/install/hospital_robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team9/hostpital_robot_ws/install/hospital_robot_msgs LD_LIBRARY_PATH=/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/team9/hostpital_robot_ws/build/hospital_robot_web/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/team9/hostpital_robot_ws/install/hospital_robot_web/lib/python3.10/site-packages:/home/team9/hostpital_robot_ws/build/hospital_robot_poi:/home/team9/hostpital_robot_ws/install/hospital_robot_poi/lib/python3.10/site-packages:/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/team9/hostpital_robot_ws/build/hospital_robot_web/build --no-deps symlink_data
+[2.348s] running develop
+[2.690s] running egg_info
+[2.691s] creating hospital_robot_web.egg-info
+[2.691s] writing hospital_robot_web.egg-info/PKG-INFO
+[2.691s] writing dependency_links to hospital_robot_web.egg-info/dependency_links.txt
+[2.692s] writing entry points to hospital_robot_web.egg-info/entry_points.txt
+[2.692s] writing requirements to hospital_robot_web.egg-info/requires.txt
+[2.692s] writing top-level names to hospital_robot_web.egg-info/top_level.txt
+[2.693s] writing manifest file 'hospital_robot_web.egg-info/SOURCES.txt'
+[2.698s] reading manifest file 'hospital_robot_web.egg-info/SOURCES.txt'
+[2.699s] writing manifest file 'hospital_robot_web.egg-info/SOURCES.txt'
+[2.703s] running build_ext
+[2.704s] Creating /home/team9/hostpital_robot_ws/install/hospital_robot_web/lib/python3.10/site-packages/hospital-robot-web.egg-link (link to .)
+[2.706s] 
+[2.706s] Installed /home/team9/hostpital_robot_ws/build/hospital_robot_web
+[2.706s] running symlink_data
+[2.706s] creating /home/team9/hostpital_robot_ws/install/hospital_robot_web/share/ament_index
+[2.707s] creating /home/team9/hostpital_robot_ws/install/hospital_robot_web/share/ament_index/resource_index
+[2.707s] creating /home/team9/hostpital_robot_ws/install/hospital_robot_web/share/ament_index/resource_index/packages
+[2.707s] symbolically linking /home/team9/hostpital_robot_ws/build/hospital_robot_web/resource/hospital_robot_web -> /home/team9/hostpital_robot_ws/install/hospital_robot_web/share/ament_index/resource_index/packages
+[2.707s] symbolically linking /home/team9/hostpital_robot_ws/build/hospital_robot_web/package.xml -> /home/team9/hostpital_robot_ws/install/hospital_robot_web/share/hospital_robot_web
+[2.853s] Invoked command in '/home/team9/hostpital_robot_ws/build/hospital_robot_web' returned '0': AMENT_PREFIX_PATH=/home/team9/hostpital_robot_ws/install/hospital_robot_poi:/home/team9/hostpital_robot_ws/install/hospital_robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team9/hostpital_robot_ws/install/hospital_robot_msgs LD_LIBRARY_PATH=/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/team9/hostpital_robot_ws/build/hospital_robot_web/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/team9/hostpital_robot_ws/install/hospital_robot_web/lib/python3.10/site-packages:/home/team9/hostpital_robot_ws/build/hospital_robot_poi:/home/team9/hostpital_robot_ws/install/hospital_robot_poi/lib/python3.10/site-packages:/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/team9/hostpital_robot_ws/build/hospital_robot_web/build --no-deps symlink_data

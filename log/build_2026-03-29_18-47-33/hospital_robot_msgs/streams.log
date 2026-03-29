@@ -1,0 +1,275 @@
+[0.029s] Invoking command in '/home/team9/hostpital_robot_ws/build/hospital_robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/team9/hostpital_robot_ws/src/hospital_robot_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/team9/hostpital_robot_ws/install/hospital_robot_msgs
+[0.075s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.503s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.689s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.758s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.771s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.795s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.943s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.053s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.140s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.006s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.689s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.594s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.660s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.664s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.744s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.744s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.745s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.745s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.799s] -- Found PythonExtra: .so  
+[4.024s] -- Configuring done
+[4.128s] -- Generating done
+[4.156s] -- Build files have been written to: /home/team9/hostpital_robot_ws/build/hospital_robot_msgs
+[4.187s] Invoked command in '/home/team9/hostpital_robot_ws/build/hospital_robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/team9/hostpital_robot_ws/src/hospital_robot_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/team9/hostpital_robot_ws/install/hospital_robot_msgs
+[4.190s] Invoking command in '/home/team9/hostpital_robot_ws/build/hospital_robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/team9/hostpital_robot_ws/build/hospital_robot_msgs -- -j6 -l6
+[4.301s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.326s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.352s] [  3%] Built target ament_cmake_python_symlink_hospital_robot_msgs
+[5.005s] running egg_info
+[5.007s] creating hospital_robot_msgs.egg-info
+[5.008s] writing hospital_robot_msgs.egg-info/PKG-INFO
+[5.008s] writing dependency_links to hospital_robot_msgs.egg-info/dependency_links.txt
+[5.008s] writing top-level names to hospital_robot_msgs.egg-info/top_level.txt
+[5.009s] writing manifest file 'hospital_robot_msgs.egg-info/SOURCES.txt'
+[5.017s] reading manifest file 'hospital_robot_msgs.egg-info/SOURCES.txt'
+[5.020s] writing manifest file 'hospital_robot_msgs.egg-info/SOURCES.txt'
+[5.139s] [  3%] Built target ament_cmake_python_build_hospital_robot_msgs_egg
+[6.093s] [  5%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/hospital_robot_msgs/msg/detail/robot_status__functions.c.o[0m
+[6.095s] [  7%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/hospital_robot_msgs/srv/detail/e_stop__functions.c.o[0m
+[6.107s] [  9%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/hospital_robot_msgs/srv/detail/set_destination__functions.c.o[0m
+[6.108s] [ 10%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/hospital_robot_msgs/srv/detail/get_poi_list__functions.c.o[0m
+[6.124s] [ 10%] Built target hospital_robot_msgs__cpp
+[6.155s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.161s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.356s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.388s] [ 18%] [32m[1mLinking C shared library libhospital_robot_msgs__rosidl_generator_c.so[0m
+[6.509s] [ 18%] Built target hospital_robot_msgs__rosidl_generator_c
+[6.540s] [ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.541s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.541s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.832s] [ 25%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hospital_robot_msgs/msg/robot_status__type_support.cpp.o[0m
+[8.043s] [ 27%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hospital_robot_msgs/msg/robot_status__type_support.cpp.o[0m
+[8.102s] [ 29%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hospital_robot_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o[0m
+[8.146s] [ 30%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hospital_robot_msgs/srv/set_destination__type_support.cpp.o[0m
+[8.210s] [ 32%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hospital_robot_msgs/msg/detail/robot_status__type_support.cpp.o[0m
+[8.295s] [ 34%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hospital_robot_msgs/srv/e_stop__type_support.cpp.o[0m
+[8.395s] [ 36%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hospital_robot_msgs/srv/get_poi_list__type_support.cpp.o[0m
+[8.494s] [ 38%] [32m[1mLinking CXX shared library libhospital_robot_msgs__rosidl_typesupport_c.so[0m
+[8.556s] [ 40%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hospital_robot_msgs/msg/detail/robot_status__type_support.c.o[0m
+[8.698s] [ 40%] Built target hospital_robot_msgs__rosidl_typesupport_c
+[8.720s] [ 41%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hospital_robot_msgs/srv/detail/set_destination__type_support.c.o[0m
+[8.744s] [ 43%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hospital_robot_msgs/msg/detail/robot_status__type_support_c.cpp.o[0m
+[8.751s] [ 45%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hospital_robot_msgs/srv/detail/dds_fastrtps/set_destination__type_support.cpp.o[0m
+[8.918s] [ 47%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hospital_robot_msgs/srv/detail/e_stop__type_support.c.o[0m
+[8.961s] [ 49%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hospital_robot_msgs/srv/set_destination__type_support.cpp.o[0m
+[9.086s] [ 50%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hospital_robot_msgs/srv/detail/get_poi_list__type_support.c.o[0m
+[9.257s] [ 52%] [32m[1mLinking C shared library libhospital_robot_msgs__rosidl_typesupport_introspection_c.so[0m
+[9.423s] [ 52%] Built target hospital_robot_msgs__rosidl_typesupport_introspection_c
+[9.435s] [ 54%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hospital_robot_msgs/srv/detail/dds_fastrtps/e_stop__type_support.cpp.o[0m
+[9.445s] [ 56%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hospital_robot_msgs/srv/detail/set_destination__type_support.cpp.o[0m
+[9.464s] [ 58%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hospital_robot_msgs/srv/detail/e_stop__type_support.cpp.o[0m
+[10.011s] [ 60%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hospital_robot_msgs/srv/e_stop__type_support.cpp.o[0m
+[10.086s] [ 61%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hospital_robot_msgs/srv/detail/set_destination__type_support_c.cpp.o[0m
+[10.269s] [ 63%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hospital_robot_msgs/srv/get_poi_list__type_support.cpp.o[0m
+[10.765s] [ 65%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hospital_robot_msgs/srv/detail/get_poi_list__type_support.cpp.o[0m
+[10.866s] [ 67%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hospital_robot_msgs/srv/detail/dds_fastrtps/get_poi_list__type_support.cpp.o[0m
+[10.895s] [ 69%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hospital_robot_msgs/srv/detail/e_stop__type_support_c.cpp.o[0m
+[10.972s] [ 70%] [32mBuilding CXX object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hospital_robot_msgs/srv/detail/get_poi_list__type_support_c.cpp.o[0m
+[11.233s] [ 72%] [32m[1mLinking CXX shared library libhospital_robot_msgs__rosidl_typesupport_cpp.so[0m
+[11.432s] [ 72%] Built target hospital_robot_msgs__rosidl_typesupport_cpp
+[12.098s] [ 74%] [32m[1mLinking CXX shared library libhospital_robot_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[12.123s] [ 76%] [32m[1mLinking CXX shared library libhospital_robot_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[12.352s] [ 78%] [32m[1mLinking CXX shared library libhospital_robot_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.353s] [ 78%] Built target hospital_robot_msgs__rosidl_typesupport_introspection_cpp
+[12.373s] [ 78%] Built target hospital_robot_msgs__rosidl_typesupport_fastrtps_c
+[12.563s] [ 78%] Built target hospital_robot_msgs__rosidl_typesupport_fastrtps_cpp
+[12.619s] [ 78%] Built target hospital_robot_msgs
+[12.679s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[15.298s] [ 80%] Built target hospital_robot_msgs__py
+[15.350s] [ 85%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/hospital_robot_msgs/msg/_robot_status_s.c.o[0m
+[15.351s] [ 85%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/hospital_robot_msgs/srv/_set_destination_s.c.o[0m
+[15.351s] [ 85%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/hospital_robot_msgs/srv/_e_stop_s.c.o[0m
+[15.351s] [ 87%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/hospital_robot_msgs/srv/_get_poi_list_s.c.o[0m
+[15.753s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/hospital_robot_msgs/libhospital_robot_msgs__rosidl_generator_py.so[0m
+[15.882s] [ 89%] Built target hospital_robot_msgs__rosidl_generator_py
+[15.937s] [ 94%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/hospital_robot_msgs/_hospital_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[15.938s] [ 94%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/hospital_robot_msgs/_hospital_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[15.938s] [ 94%] [32mBuilding C object CMakeFiles/hospital_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/hospital_robot_msgs/_hospital_robot_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[16.248s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[16.253s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[16.260s] [100%] [32m[1mLinking C shared library rosidl_generator_py/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[16.364s] [100%] Built target hospital_robot_msgs__rosidl_typesupport_introspection_c__pyext
+[16.365s] [100%] Built target hospital_robot_msgs__rosidl_typesupport_c__pyext
+[16.365s] [100%] Built target hospital_robot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[16.403s] Invoked command in '/home/team9/hostpital_robot_ws/build/hospital_robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/team9/hostpital_robot_ws/build/hospital_robot_msgs -- -j6 -l6
+[16.407s] Invoking command in '/home/team9/hostpital_robot_ws/build/hospital_robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/team9/hostpital_robot_ws/build/hospital_robot_msgs
+[16.429s] -- Install configuration: ""
+[16.430s] -- Execute custom install script
+[16.430s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/ament_index/resource_index/rosidl_interfaces/hospital_robot_msgs
+[16.457s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__functions.h
+[16.482s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__struct.h
+[16.507s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__type_support.h
+[16.530s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/robot_status.h
+[16.551s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/rosidl_generator_c__visibility_control.h
+[16.575s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__functions.h
+[16.602s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__struct.h
+[16.627s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__type_support.h
+[16.651s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__functions.h
+[16.675s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__struct.h
+[16.700s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__type_support.h
+[16.723s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__functions.h
+[16.745s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__struct.h
+[16.768s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__type_support.h
+[16.794s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/e_stop.h
+[16.817s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/get_poi_list.h
+[16.841s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/set_destination.h
+[16.866s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/library_path.sh
+[16.893s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/library_path.dsv
+[16.919s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[16.942s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.965s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__rosidl_typesupport_fastrtps_c.h
+[16.990s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__rosidl_typesupport_fastrtps_c.h
+[17.014s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__rosidl_typesupport_fastrtps_c.h
+[17.038s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[17.062s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.089s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__rosidl_typesupport_introspection_c.h
+[17.116s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__rosidl_typesupport_introspection_c.h
+[17.141s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__rosidl_typesupport_introspection_c.h
+[17.166s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__builder.hpp
+[17.195s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__struct.hpp
+[17.218s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__traits.hpp
+[17.241s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__type_support.hpp
+[17.264s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/robot_status.hpp
+[17.293s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.316s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__builder.hpp
+[17.341s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__struct.hpp
+[17.364s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__traits.hpp
+[17.390s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__type_support.hpp
+[17.415s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__builder.hpp
+[17.440s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__struct.hpp
+[17.464s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__traits.hpp
+[17.495s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__type_support.hpp
+[17.519s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__builder.hpp
+[17.545s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__struct.hpp
+[17.568s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__traits.hpp
+[17.598s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__type_support.hpp
+[17.622s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/e_stop.hpp
+[17.646s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/get_poi_list.hpp
+[17.671s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/set_destination.hpp
+[17.698s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[17.722s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.746s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__rosidl_typesupport_fastrtps_cpp.hpp
+[17.771s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__rosidl_typesupport_fastrtps_cpp.hpp
+[17.801s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__rosidl_typesupport_fastrtps_cpp.hpp
+[17.826s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[17.850s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/e_stop__rosidl_typesupport_introspection_cpp.hpp
+[17.876s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/get_poi_list__rosidl_typesupport_introspection_cpp.hpp
+[17.901s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/include/hospital_robot_msgs/hospital_robot_msgs/srv/detail/set_destination__rosidl_typesupport_introspection_cpp.hpp
+[17.926s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/pythonpath.sh
+[17.950s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/pythonpath.dsv
+[17.975s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[18.007s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[18.033s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[18.058s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[18.087s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/__init__.py
+[18.111s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/_hospital_robot_msgs_s.ep.rosidl_typesupport_c.c
+[18.134s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/_hospital_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.156s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/_hospital_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[18.181s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[18.209s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[18.233s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[18.255s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/libhospital_robot_msgs__rosidl_generator_py.so
+[18.278s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/msg/__init__.py
+[18.308s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/msg/_robot_status.py
+[18.336s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/msg/_robot_status_s.c
+[18.361s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/__init__.py
+[18.388s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_e_stop.py
+[18.415s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_e_stop_s.c
+[18.439s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_get_poi_list.py
+[18.463s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_get_poi_list_s.c
+[18.492s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_set_destination.py
+[18.518s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_set_destination_s.c
+[18.543s] -- Up-to-date symlink: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[18.544s] -- Up-to-date symlink: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[18.544s] -- Up-to-date symlink: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/hospital_robot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[18.546s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/msg/RobotStatus.idl
+[18.570s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/SetDestination.idl
+[18.601s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/EStop.idl
+[18.626s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/GetPOIList.idl
+[18.648s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/msg/RobotStatus.msg
+[18.672s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/SetDestination.srv
+[18.699s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/SetDestination_Request.msg
+[18.725s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/SetDestination_Response.msg
+[18.750s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/EStop.srv
+[18.776s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/EStop_Request.msg
+[18.801s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/EStop_Response.msg
+[18.825s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/GetPOIList.srv
+[18.849s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/GetPOIList_Request.msg
+[18.872s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/srv/GetPOIList_Response.msg
+[18.900s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/ament_index/resource_index/package_run_dependencies/hospital_robot_msgs
+[18.925s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/ament_index/resource_index/parent_prefix_path/hospital_robot_msgs
+[18.948s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/ament_prefix_path.sh
+[18.973s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/ament_prefix_path.dsv
+[19.000s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/path.sh
+[19.025s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/environment/path.dsv
+[19.050s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/local_setup.bash
+[19.075s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/local_setup.sh
+[19.102s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/local_setup.zsh
+[19.127s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/local_setup.dsv
+[19.152s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/package.dsv
+[19.177s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/ament_index/resource_index/packages/hospital_robot_msgs
+[19.204s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/rosidl_cmake-extras.cmake
+[19.228s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.251s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.274s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[19.299s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[19.324s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[19.348s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[19.373s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgsConfig.cmake
+[19.400s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgsConfig-version.cmake
+[19.422s] -- Symlinking: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/package.xml
+[19.446s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_generator_c.so
+[19.447s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_generator_c.so" to ""
+[19.447s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_fastrtps_c.so
+[19.448s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[19.449s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_introspection_c.so
+[19.450s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[19.450s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_c.so
+[19.452s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_c.so" to ""
+[19.452s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[19.453s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[19.453s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_introspection_cpp.so
+[19.455s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[19.455s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_cpp.so
+[19.456s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_typesupport_cpp.so" to ""
+[19.558s] Listing '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs'...
+[19.558s] Compiling '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/__init__.py'...
+[19.559s] Listing '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/msg'...
+[19.559s] Compiling '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/msg/__init__.py'...
+[19.559s] Compiling '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/msg/_robot_status.py'...
+[19.559s] Listing '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv'...
+[19.559s] Compiling '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/__init__.py'...
+[19.559s] Compiling '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_e_stop.py'...
+[19.559s] Compiling '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_get_poi_list.py'...
+[19.560s] Compiling '/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/local/lib/python3.10/dist-packages/hospital_robot_msgs/srv/_set_destination.py'...
+[19.577s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_generator_py.so
+[19.578s] -- Set runtime path of "/home/team9/hostpital_robot_ws/install/hospital_robot_msgs/lib/libhospital_robot_msgs__rosidl_generator_py.so" to ""
+[19.578s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_generator_cExport.cmake
+[19.579s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_generator_cExport-noconfig.cmake
+[19.580s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[19.580s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[19.581s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[19.581s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[19.582s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_cExport.cmake
+[19.583s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[19.583s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_generator_cppExport.cmake
+[19.584s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[19.584s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[19.585s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[19.586s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[19.587s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_cppExport.cmake
+[19.587s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/hospital_robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[19.587s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_generator_pyExport.cmake
+[19.588s] -- Installing: /home/team9/hostpital_robot_ws/install/hospital_robot_msgs/share/hospital_robot_msgs/cmake/export_hospital_robot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[19.600s] Invoked command in '/home/team9/hostpital_robot_ws/build/hospital_robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/team9/hostpital_robot_ws/build/hospital_robot_msgs

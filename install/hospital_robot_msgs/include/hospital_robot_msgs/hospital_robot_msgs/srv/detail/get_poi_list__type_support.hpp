@@ -1,0 +1,1 @@
+/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_generator_cpp/hospital_robot_msgs/srv/detail/get_poi_list__type_support.hpp

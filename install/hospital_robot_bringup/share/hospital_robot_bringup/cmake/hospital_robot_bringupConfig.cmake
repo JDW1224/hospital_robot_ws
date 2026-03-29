@@ -1,0 +1,1 @@
+/home/team9/hostpital_robot_ws/build/hospital_robot_bringup/ament_cmake_core/hospital_robot_bringupConfig.cmake

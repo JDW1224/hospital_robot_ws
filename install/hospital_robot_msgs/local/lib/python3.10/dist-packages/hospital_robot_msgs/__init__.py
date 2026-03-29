@@ -1,0 +1,1 @@
+/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_generator_py/hospital_robot_msgs/__init__.py
