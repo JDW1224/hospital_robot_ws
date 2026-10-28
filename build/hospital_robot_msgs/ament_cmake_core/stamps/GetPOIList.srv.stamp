@@ -1,4 +1,0 @@
-# 등록된 POI 목록 조회 서비스
----
-string[] ids              # 목적지 ID 배열
-string[] names            # 목적지 이름 배열

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>병원 휠체어 안내</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(160deg, #1a2a4a 0%, #0d1526 100%);
+    color: #fff; min-height: 100vh; padding: 20px;
+    display: flex; flex-direction: column;
+  }
+  .header { text-align: center; padding: 16px 0 24px; }
+  .header h1 { font-size: 24px; font-weight: 700; }
+  .header p { font-size: 13px; color: #8ba3c7; margin-top: 4px; }
+
+  /* 상태 표시 */
+  .status-card {
+    background: rgba(255,255,255,0.08); border-radius: 18px;
+    padding: 20px; margin-bottom: 20px; text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .status-label { font-size: 12px; color: #8ba3c7; text-transform: uppercase; letter-spacing: 1px; }
+  .status-value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+  .status-goal { font-size: 15px; color: #5e8fff; margin-top: 4px; }
+  .status-idle { color: #8ba3c7; }
+  .status-navigating { color: #ffd166; }
+  .status-arrived { color: #06d6a0; }
+  .status-error { color: #ef476f; }
+
+  /* 음성 버튼 */
+  .mic-btn {
+    width: 120px; height: 120px; border-radius: 50%;
+    background: linear-gradient(145deg, #2d7dff, #1a5fd4);
+    border: none; color: #fff; font-size: 48px;
+    margin: 0 auto 12px; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(45,125,255,0.4); cursor: pointer;
+    transition: all 0.2s; user-select: none;
+  }
+  .mic-btn:active { transform: scale(0.95); }
+  .mic-btn.listening {
+    background: linear-gradient(145deg, #ef476f, #d62d56);
+    animation: pulse 1.2s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 8px 24px rgba(239,71,111,0.4); }
+    50% { box-shadow: 0 8px 40px rgba(239,71,111,0.8); }
+    100% { box-shadow: 0 8px 24px rgba(239,71,111,0.4); }
+  }
+  .mic-label { text-align: center; font-size: 14px; color: #8ba3c7; margin-bottom: 8px; }
+  .heard { text-align: center; font-size: 16px; min-height: 24px; color: #5e8fff; margin-bottom: 20px; }
+
+  /* POI 버튼 그리드 */
+  .poi-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;
+  }
+  .poi-btn {
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 14px; padding: 18px 12px; color: #fff; font-size: 17px;
+    font-weight: 600; cursor: pointer; transition: all 0.15s;
+  }
+  .poi-btn:active { background: rgba(45,125,255,0.4); transform: scale(0.97); }
+
+  /* 취소 버튼 */
+  .cancel-btn {
+    background: rgba(239,71,111,0.2); border: 1px solid rgba(239,71,111,0.4);
+    border-radius: 14px; padding: 16px; color: #ff6b8f; font-size: 16px;
+    font-weight: 600; cursor: pointer; width: 100%; margin-top: auto;
+  }
+  .cancel-btn:active { background: rgba(239,71,111,0.4); }
+
+  /* 비상정지 버튼 */
+  .estop-btn {
+    background: rgba(239,71,111,0.85); border: 2px solid #ff2d55;
+    border-radius: 14px; padding: 18px; color: #fff; font-size: 18px;
+    font-weight: 800; cursor: pointer; width: 100%; margin-top: 10px;
+  }
+  .estop-btn:active { transform: scale(0.97); }
+  /* 비상정지 활성(눌려서 ESTOP 상태) — 해제 버튼으로 보이게 */
+  .estop-btn.active {
+    background: rgba(255,193,7,0.9); border-color: #ffc107; color: #1a1a1a;
+  }
+
+  /* 연결 상태 */
+  .conn { position: fixed; top: 10px; right: 14px; font-size: 11px;
+    display: flex; align-items: center; gap: 5px; }
+  .conn .dot { width: 8px; height: 8px; border-radius: 50%; background: #ef476f; }
+  .conn.connected .dot { background: #06d6a0; }
+
+  /* 토스트 */
+  .toast {
+    position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+    background: rgba(0,0,0,0.85); padding: 12px 22px; border-radius: 24px;
+    font-size: 14px; opacity: 0; transition: opacity 0.3s; pointer-events: none;
+    max-width: 80%; text-align: center;
+  }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+  <div class="conn" id="conn"><span class="dot"></span><span id="connText">연결 중</span></div>
+
+  <div class="header">
+    <h1>🏥 휠체어 안내</h1>
+    <p>가고 싶은 곳을 말하거나 선택하세요</p>
+  </div>
+
+  <div class="status-card">
+    <div class="status-label">현재 상태</div>
+    <div class="status-value status-idle" id="statusValue">대기 중</div>
+    <div class="status-goal" id="statusGoal"></div>
+  </div>
+
+  <button class="mic-btn" id="micBtn">🎤</button>
+  <div class="mic-label" id="micLabel">탭하여 음성 입력</div>
+  <div class="heard" id="heard"></div>
+
+  <div class="poi-grid" id="poiGrid"></div>
+
+  <button class="cancel-btn" id="cancelBtn">🛑 주행 취소</button>
+
+  <button class="estop-btn" id="estopBtn">🚨 비상정지</button>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+const wsProto = location.protocol === 'https:' ? 'wss' : 'ws';
+const wsUrl = `${wsProto}://${location.host}/ws`;
+let ws = null;
+let reconnectTimer = null;
+
+// ── WebSocket 연결 ──
+function connect() {
+  ws = new WebSocket(wsUrl);
+
+  ws.onopen = () => {
+    setConn(true);
+    showToast('연결됨');
+  };
+
+  ws.onclose = () => {
+    setConn(false);
+    clearTimeout(reconnectTimer);
+    reconnectTimer = setTimeout(connect, 2000);
+  };
+
+  ws.onerror = () => setConn(false);
+
+  ws.onmessage = (e) => {
+    const data = JSON.parse(e.data);
+    if (data.type === 'state') {
+      updateStatus(data);
+    } else if (data.type === 'ack') {
+      showToast(data.message);
+    }
+  };
+}
+
+function setConn(ok) {
+  const el = document.getElementById('conn');
+  el.classList.toggle('connected', ok);
+  document.getElementById('connText').textContent = ok ? '연결됨' : '연결 끊김';
+}
+
+// ── 상태 업데이트 ──
+const STATE_MAP = {
+  'IDLE':       { text: '대기 중',   cls: 'status-idle' },
+  'NAVIGATING': { text: '이동 중',   cls: 'status-navigating' },
+  'ARRIVED':    { text: '도착!',     cls: 'status-arrived' },
+  'ERROR':      { text: '오류',      cls: 'status-error' },
+  'CANCELLED':  { text: '취소됨',    cls: 'status-idle' },
+  'ESTOP':      { text: '비상정지',  cls: 'status-error' },
+};
+
+function updateStatus(data) {
+  const sv = document.getElementById('statusValue');
+  const sg = document.getElementById('statusGoal');
+  const info = STATE_MAP[data.state] || { text: data.state, cls: 'status-idle' };
+  sv.textContent = info.text;
+  sv.className = 'status-value ' + info.cls;
+  sg.textContent = data.goal_name ? `목적지: ${data.goal_name}` : '';
+}
+
+// ── POI 버튼 로드 ──
+async function loadPois() {
+  try {
+    const res = await fetch('/api/pois');
+    const data = await res.json();
+    const grid = document.getElementById('poiGrid');
+    grid.innerHTML = '';
+    data.pois.forEach(poi => {
+      const btn = document.createElement('button');
+      btn.className = 'poi-btn';
+      btn.textContent = poi.name;
+      btn.onclick = () => sendCommand(poi.id);
+      grid.appendChild(btn);
+    });
+  } catch (e) {
+    console.error('POI 로드 실패', e);
+  }
+}
+
+// ── 명령 전송 ──
+function sendCommand(text) {
+  if (!ws || ws.readyState !== WebSocket.OPEN) {
+    showToast('서버 연결 안 됨');
+    return;
+  }
+  ws.send(JSON.stringify({ type: 'command', text: String(text) }));
+}
+
+function sendVoice(text) {
+  if (!ws || ws.readyState !== WebSocket.OPEN) {
+    showToast('서버 연결 안 됨');
+    return;
+  }
+  ws.send(JSON.stringify({ type: 'voice', text: text }));
+}
+
+// ── 음성 인식 (webkitSpeechRecognition) ──
+let recognition = null;
+let listening = false;
+
+function initSpeech() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) {
+    document.getElementById('micLabel').textContent = '이 브라우저는 음성 인식 미지원';
+    document.getElementById('micBtn').style.opacity = '0.4';
+    return;
+  }
+  recognition = new SR();
+  recognition.lang = 'ko-KR';
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  recognition.onresult = (event) => {
+    const text = event.results[0][0].transcript;
+    document.getElementById('heard').textContent = `"${text}"`;
+    sendVoice(text);
+  };
+
+  recognition.onerror = (event) => {
+    showToast('음성 인식 오류: ' + event.error);
+    stopListening();
+  };
+
+  recognition.onend = () => stopListening();
+}
+
+function startListening() {
+  if (!recognition) return;
+  try {
+    recognition.start();
+    listening = true;
+    document.getElementById('micBtn').classList.add('listening');
+    document.getElementById('micLabel').textContent = '듣고 있어요...';
+    document.getElementById('heard').textContent = '';
+  } catch (e) {}
+}
+
+function stopListening() {
+  listening = false;
+  document.getElementById('micBtn').classList.remove('listening');
+  document.getElementById('micLabel').textContent = '탭하여 음성 입력';
+}
+
+// ── 토스트 ──
+let toastTimer = null;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ── 이벤트 바인딩 ──
+document.getElementById('micBtn').addEventListener('click', () => {
+  if (listening) {
+    recognition && recognition.stop();
+    stopListening();
+  } else {
+    startListening();
+  }
+});
+
+document.getElementById('cancelBtn').addEventListener('click', () => {
+  if (ws && ws.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify({ type: 'cancel' }));
+  }
+});
+
+// ── 비상정지 토글 ──
+let estopActive = false;
+const estopBtn = document.getElementById('estopBtn');
+estopBtn.addEventListener('click', () => {
+  if (!(ws && ws.readyState === WebSocket.OPEN)) return;
+  estopActive = !estopActive;
+  ws.send(JSON.stringify({ type: 'estop', on: estopActive }));
+  if (estopActive) {
+    estopBtn.textContent = '✅ 비상정지 해제';
+    estopBtn.classList.add('active');
+  } else {
+    estopBtn.textContent = '🚨 비상정지';
+    estopBtn.classList.remove('active');
+  }
+});
+
+// ── 시작 ──
+initSpeech();
+loadPois();
+connect();
+</script>
+</body>
+</html>

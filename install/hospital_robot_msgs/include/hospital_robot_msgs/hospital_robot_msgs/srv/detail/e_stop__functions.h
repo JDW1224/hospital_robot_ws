@@ -1,1 +1,0 @@
-/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_generator_c/hospital_robot_msgs/srv/detail/e_stop__functions.h

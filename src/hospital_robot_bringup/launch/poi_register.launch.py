@@ -19,7 +19,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     pkg_bringup = get_package_share_directory('hospital_robot_bringup')
-    default_map = os.path.expanduser('~/hospital_robot_ws/maps/hospital_floor1.yaml')
+    default_map = os.path.expanduser('~/hospital_robot_ws/maps/hospital_map.yaml')
     rviz_config = os.path.join(pkg_bringup, 'rviz', 'poi_register.rviz')
 
     map_arg = DeclareLaunchArgument(

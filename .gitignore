@@ -1,0 +1,23 @@
+# ROS/colcon generated output
+/build/
+/install/
+/log/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+# Local settings, credentials, and certificates
+.env
+.env.*
+!.env.example
+/certs/
+*.pem
+*.key
+*.p12
+*.pfx
+.vscode/
+.idea/
+# Duplicate archives and separately supplied model weights
+*.zip
+*.pt
+*.onnx

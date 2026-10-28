@@ -1,4 +1,0 @@
-[console_scripts]
-goal_sender = hospital_robot_navigation.goal_sender:main
-scan_frame_remapper = hospital_robot_navigation.scan_frame_remapper:main
-

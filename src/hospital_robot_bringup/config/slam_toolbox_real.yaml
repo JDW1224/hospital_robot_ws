@@ -1,0 +1,101 @@
+# SLAM Toolbox 파라미터 - 실제 휠체어 로봇용
+# 환경: 흰색 폼보드 칸막이, 좁은 공간 (~5m x 5m), 휠체어 진동
+# 작성: Team 9 - Hospital Robot
+
+slam_toolbox:
+  ros__parameters:
+    # ============================================
+    # ROS 프레임/토픽
+    # ============================================
+    use_sim_time: false                # 실제 로봇이므로 false
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint
+    scan_topic: /scan
+    
+    # 모드 (mapping: 새 맵 생성, localization: 기존 맵에서 위치 추정)
+    mode: mapping
+    
+    # ============================================
+    # 매핑 핵심 설정
+    # ============================================
+    # 맵 해상도 (5cm/pixel)
+    resolution: 0.05
+    
+    # 라이다 최대 인식 거리 (환경에 맞춰)
+    max_laser_range: 5.0               # 너의 환경 사이즈에 맞춤
+    
+    # 새 노드 추가 임계값 (이만큼 움직여야 새 스캔 등록)
+    minimum_travel_distance: 0.3       # 30cm 이동 시
+    minimum_travel_heading: 0.3        # 약 17도 회전 시
+    
+    # ============================================
+    # Loop Closure 설정 (⭐ Pose Jump 방지)
+    # ============================================
+    # 비활성화: 잘못된 매칭으로 인한 점프 방지
+    do_loop_closing: false             # ⭐⭐⭐ 핵심 설정
+    
+    # 만약 loop closure를 켜고 싶으면:
+    # do_loop_closing: true
+    # loop_search_maximum_distance: 1.5
+    # loop_match_minimum_response_fine: 0.65
+    # loop_match_minimum_chain_size: 10
+    
+    # ============================================
+    # 스캔 매칭
+    # ============================================
+    use_scan_matching: true
+    use_scan_barycenter: true
+    
+    scan_buffer_size: 10
+    scan_buffer_maximum_scan_distance: 10.0
+    link_match_minimum_response_fine: 0.1
+    link_scan_maximum_distance: 1.5
+    
+    # ============================================
+    # 솔버 (Ceres 사용)
+    # ============================================
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: None
+    
+    # ============================================
+    # 상관관계 검색
+    # ============================================
+    correlation_search_space_dimension: 0.5
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.1
+    
+    # 정밀 검색 각도
+    fine_search_angle_offset: 0.00349
+    coarse_search_angle_offset: 0.349
+    coarse_angle_resolution: 0.0349
+    
+    # ============================================
+    # 변환 분산 (진동 환경 대응)
+    # ============================================
+    distance_variance_penalty: 0.5
+    angle_variance_penalty: 1.0
+    
+    # ============================================
+    # 성능
+    # ============================================
+    transform_publish_period: 0.02     # TF 발행 주기
+    map_update_interval: 3.0           # 맵 업데이트 주기
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+    
+    # 스택 크기
+    stack_size_to_use: 40000000
+    
+    # 인터랙티브 모드 (RViz에서 매핑 제어 가능)
+    enable_interactive_mode: true
+    
+    # ============================================
+    # 디버그
+    # ============================================
+    debug_logging: false
+    throttle_scans: 1                  # 1: 모든 스캔 사용

@@ -1,12 +1,17 @@
 <?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hospital_robot_web</name>
   <version>0.1.0</version>
-  <description>로컬 네트워크 웹 UI 서버</description>
-  <maintainer email="dev@todo.com">developer</maintainer>
+  <description>병원 휠체어 웹 서버 (핸드폰 음성/버튼 → POI 주행)</description>
+  <maintainer email="team9@todo.todo">team9</maintainer>
   <license>MIT</license>
-  <depend>rclpy</depend>
-  <depend>hospital_robot_msgs</depend>
-  <depend>hospital_robot_poi</depend>
-  <export><build_type>ament_python</build_type></export>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>hospital_robot_poi</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
 </package>

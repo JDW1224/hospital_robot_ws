@@ -1,1 +1,0 @@
-/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_typesupport_fastrtps_cpp/hospital_robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

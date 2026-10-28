@@ -1,1 +1,0 @@
-/home/team9/hostpital_robot_ws/src/hospital_robot_bringup/launch/navigation.launch.py

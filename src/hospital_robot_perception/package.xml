@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hospital_robot_perception</name>
+  <version>1.0.0</version>
+  <description>YOLO human detection + smooth safety stop gate</description>
+  <maintainer email="team9@todo.todo">team9</maintainer>
+  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

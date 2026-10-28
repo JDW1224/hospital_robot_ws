@@ -1,4 +1,0 @@
-source;share/hospital_robot_msgs/local_setup.bash
-source;share/hospital_robot_msgs/local_setup.dsv
-source;share/hospital_robot_msgs/local_setup.sh
-source;share/hospital_robot_msgs/local_setup.zsh

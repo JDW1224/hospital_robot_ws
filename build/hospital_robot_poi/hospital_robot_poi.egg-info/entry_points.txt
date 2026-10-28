@@ -1,3 +1,0 @@
-[console_scripts]
-poi_registrar = hospital_robot_poi.poi_registrar_node:main
-

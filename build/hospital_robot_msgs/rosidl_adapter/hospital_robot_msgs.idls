@@ -1,4 +1,0 @@
-/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_adapter/hospital_robot_msgs:msg/RobotStatus.idl
-/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_adapter/hospital_robot_msgs:srv/SetDestination.idl
-/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_adapter/hospital_robot_msgs:srv/EStop.idl
-/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_adapter/hospital_robot_msgs:srv/GetPOIList.idl

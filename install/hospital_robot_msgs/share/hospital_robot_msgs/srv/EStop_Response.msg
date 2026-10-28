@@ -1,1 +1,0 @@
-/home/team9/hostpital_robot_ws/build/hospital_robot_msgs/rosidl_cmake/srv/EStop_Response.msg

@@ -1,5 +1,0 @@
-# E-Stop 발동/해제 서비스
-bool activate             # true: E-Stop 발동 / false: 해제
----
-bool success              # 성공 여부
-string state              # 현재 상태 (NORMAL / ESTOP)
